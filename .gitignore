@@ -1,0 +1,9 @@
+/.gradle/
+/target/
+.settings
+.git
+.classpath
+.project
+/bin/
+.metadata
+gradle
