@@ -12,6 +12,4 @@ public interface CustomerRepository extends CassandraRepository<Customer, String
 	@AllowFiltering
 	public List<Customer> findByFirstname(String firstname);
  
-	@AllowFiltering
-	public List<Customer> findCustomerHasAgeGreaterThan(int age);
 }

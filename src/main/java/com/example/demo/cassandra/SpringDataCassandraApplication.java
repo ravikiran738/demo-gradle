@@ -54,9 +54,5 @@ public class SpringDataCassandraApplication implements CommandLineRunner{
 		System.out.println("===================Lookup Customers from Cassandra by Firstname===================");
 		List<Customer> peters = customerRepository.findByFirstname("Peter");
 		peters.forEach(System.out::println);
- 
-		System.out.println("===================Lookup Customers from Cassandra by Age===================");
-		List<Customer> custsAgeGreaterThan25 = customerRepository.findCustomerHasAgeGreaterThan(25);
-		custsAgeGreaterThan25.forEach(System.out::println);
 	}
 }
