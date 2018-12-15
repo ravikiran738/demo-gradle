@@ -7,7 +7,7 @@ import org.springframework.data.cassandra.repository.CassandraRepository;
 
 import com.example.demo.cassandra.model.Customer;
 
-public interface CustomerRepository extends CassandraRepository<Customer, String> {
+public interface CustomerRepository extends CassandraRepository<Customer, Integer> {
 	 
 	@AllowFiltering
 	public List<Customer> findByFirstname(String firstname);
